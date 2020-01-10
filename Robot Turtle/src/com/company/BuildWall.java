@@ -4,7 +4,7 @@ import java.util.*;
 
 public class BuildWall extends Tour {
 
-  public void buildWall() {
+  public void buildWall(Tray tray) {
     Scanner scanner = new Scanner(System.in);
     int inputType;
     int inputX;
