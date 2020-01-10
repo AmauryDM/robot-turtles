@@ -16,6 +16,10 @@ public class Case {
     return position;
   }
 
+  public void empty(){
+    this.content = null;
+  }
+
   public Turtle contentEmpty() {
     if(content == null){
       Turtle turtle = new Turtle();
