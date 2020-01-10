@@ -28,6 +28,8 @@ public class Deck {
             deck.add(new Card());
         }
 
+        return deck;
+
     }
 
 }
