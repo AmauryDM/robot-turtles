@@ -30,7 +30,7 @@ public class Case {
   }
 
   public boolean emptyCase() {
-        if (contenu == null) {
+        if (content == null) {
           return true;
         }
         else {
