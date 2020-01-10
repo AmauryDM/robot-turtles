@@ -1,6 +1,7 @@
 package com.company;
 
 public class Wall {
+
     protected String name;
     protected String characteristic;
     protected String type;
