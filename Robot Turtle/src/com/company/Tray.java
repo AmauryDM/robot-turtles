@@ -30,36 +30,36 @@ public class Tray {
 
         if (number == 2) {
             players.get(0).setStartCoordinate(new int[] {0, 1});
-            joueurs.get(1).setStartCoordinate(new int[] {0,5});
-            [0][1].placeTurtle(instancePlateau, joueurs.get(0));
-            plateau[0][5].placeTurtle(instancePlateau, joueurs.get(1));
-            plateau[7][3].placeTurtle(instancePlateau, joyaux.get(0));
+            players.get(1).setStartCoordinate(new int[] {0,5});
+            tray[0][1].placeTurtle(initializeTray, players.get(0));
+            tray[0][5].placeTurtle(initializeTray, players.get(1));
+            tray[7][3].placeTurtle(initializeTray, jewels.get(0));
         }
 
-        else if (nombreJoueurs == 3) {
-            joueurs.get(0).setPositionDepart(new int[] {0,0});
-            joueurs.get(1).setPositionDepart(new int[] {0,3});
-            joueurs.get(2).setPositionDepart(new int[] {0,6});
-            plateau[0][0].poser(instancePlateau, joueurs.get(0));
-            plateau[0][3].poser(instancePlateau, joueurs.get(1));
-            plateau[0][6].poser(instancePlateau, joueurs.get(2));
-            plateau[7][0].poser(instancePlateau, joyaux.get(0));
-            plateau[7][3].poser(instancePlateau, joyaux.get(1));
-            plateau[7][6].poser(instancePlateau, joyaux.get(2));
+        else if (number == 3) {
+            players.get(0).setStartCoordinate(new int[] {0,0});
+            players.get(1).setStartCoordinate(new int[] {0,3});
+            players.get(2).setStartCoordinate(new int[] {0,6});
+            tray[0][0].placeTurtle(initializeTray, players.get(0));
+            tray[0][3].placeTurtle(initializeTray, players.get(1));
+            tray[0][6].placeTurtle(initializeTray, players.get(2));
+            tray[7][0].placeTurtle(initializeTray, jewels.get(0));
+            tray[7][3].placeTurtle(initializeTray, jewels.get(1));
+            tray[7][6].placeTurtle(initializeTray, jewels.get(2));
         }
 
-        else if (nombreJoueurs == 4) {
-            joueurs.get(0).setPositionDepart(new int[] {0,0});
-            joueurs.get(1).setPositionDepart(new int[] {0,2});
-            joueurs.get(2).setPositionDepart(new int[] {0,5});
-            joueurs.get(3).setPositionDepart(new int[] {0,7});
-            plateau[0][0].poser(instancePlateau, joueurs.get(0));
-            plateau[0][2].poser(instancePlateau, joueurs.get(1));
-            plateau[0][5].poser(instancePlateau, joueurs.get(2));
-            plateau[0][7].poser(instancePlateau, joueurs.get(3));
-            plateau[7][1].poser(instancePlateau, joyaux.get(0));
-            plateau[7][6].poser(instancePlateau, joyaux.get(1));
+        else if (number == 4) {
+            players.get(0).setStartCoordinate(new int[] {0,0});
+            players.get(1).setStartCoordinate(new int[] {0,2});
+            players.get(2).setStartCoordinate(new int[] {0,5});
+            players.get(3).setStartCoordinate(new int[] {0,7});
+            tray[0][0].placeTurtle(initializeTray, players.get(0));
+            tray[0][2].placeTurtle(initializeTray, players.get(1));
+            tray[0][5].placeTurtle(initializeTray, players.get(2));
+            tray[0][7].placeTurtle(initializeTray, players.get(3));
+            tray[7][1].placeTurtle(initializeTray, jewels.get(0));
+            tray[7][6].placeTurtle(initializeTray, jewels.get(1));
         }
     }
-
+  }
 }
