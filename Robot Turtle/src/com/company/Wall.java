@@ -1,24 +1,27 @@
 package com.company;
 
-public class Wall extends Tour {
+public class Wall {
+    protected String name;
+    protected String characteristic;
+    protected String type;
 
-    public static void buildWall() {
-
+    public String getName() {
+        return this.name;
     }
 
-    public static class Box {
+    public String getCharacteristic() {
+        return this.characteristic;
+    }
 
-        private int xCoordinate;
-        private int yCoordinate;
-        private String type;
-
-        public void setxCoordinate(int xCoordinate) {
-            this.xCoordinate = xCoordinate;
+    public boolean isDestroyable() {
+        boolean destroyable = false;
+        if (this.name.equals("IceWall")) {
+            destroyable = true;
         }
 
-        public void setyCoordinate(int yCoordinate) {
-            this.yCoordinate = yCoordinate;
+        else if (this.name.equals("StoneWall")) {
+            destroyable = false;
         }
-
+        return destroyable;
     }
 }
