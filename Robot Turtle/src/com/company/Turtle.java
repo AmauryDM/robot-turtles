@@ -38,4 +38,17 @@ public class Turtle {
         return startCoordinate;
     }
 
+    public int[] setStartCoordinate(){
+      this.startCoordinate = startCoordinate;
+    }
+
+    public void placeTurtle(int xCoordinate, int yCoordinate){
+      this.xCoordinate = xCoordinate;
+      this.yCoordinate = yCoordinate;
+    }
+
+    public Case currentCase(Tray tray){
+
+    }
+
 }
