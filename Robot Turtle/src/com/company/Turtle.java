@@ -3,7 +3,7 @@ package com.company;
 public class Turtle {
 
     protected String direction;
-    protected String type;
+    protected String name;
     protected int xCoordinate;
     protected int yCoordinate;
     protected int[] startCoordinate;
@@ -42,7 +42,7 @@ public class Turtle {
       this.startCoordinate = startCoordinate;
     }
 
-    public void placeTurtle(int xCoordinate, int yCoordinate){
+    public void place(int xCoordinate, int yCoordinate){
       this.xCoordinate = xCoordinate;
       this.yCoordinate = yCoordinate;
     }
