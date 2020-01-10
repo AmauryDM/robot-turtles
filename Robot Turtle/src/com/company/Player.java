@@ -19,6 +19,8 @@ public class Player extends Turtle{
     public void setDiscard(ArrayList<Card> discard) {
         this.discard = discard;
     }
+    
+
 
     
 
