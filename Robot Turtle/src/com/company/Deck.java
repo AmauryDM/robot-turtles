@@ -39,6 +39,14 @@ public class Deck {
       for(int i = 0; i < 12; i++) {
         walls.add(new IceWall());
       }
+      return walls;
+    }
+
+    public void getDeck() {
+      int i = 1;
+      for (Card card : deck) {
+        System.out.println(i + " " + card.getName());
+        i += 1;
     }
 
 }
