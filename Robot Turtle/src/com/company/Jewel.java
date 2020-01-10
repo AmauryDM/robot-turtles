@@ -2,8 +2,12 @@ package com.company;
 
 public class Jewel extends Turtle {
 
-    String direction;
-    int position;
+  private String name;
+
+  public Jewel () {
+    this.name = name;
+    this.direction = "Joyau";
+  }
 
     public static void getJewel() {
         Jewel jewel = new Jewel();
