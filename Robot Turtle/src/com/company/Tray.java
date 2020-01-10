@@ -13,7 +13,7 @@ public class Tray {
         this.jewels = jewels;
     }
 
-    public Case position(int xCoordinate, int yCoordinate){
+    public Case positionCase(int xCoordinate, int yCoordinate){
       try {
         return tray[xCoordinate][yCoordinate];
       }
@@ -31,21 +31,21 @@ public class Tray {
         if (number == 2) {
             players.get(0).setStartCoordinate(new int[] {0, 1});
             players.get(1).setStartCoordinate(new int[] {0,5});
-            tray[0][1].placeTurtle(initializeTray, players.get(0));
-            tray[0][5].placeTurtle(initializeTray, players.get(1));
-            tray[7][3].placeTurtle(initializeTray, jewels.get(0));
+            tray[0][1].place(initializeTray, players.get(0));
+            tray[0][5].place(initializeTray, players.get(1));
+            tray[7][3].place(initializeTray, jewels.get(0));
         }
 
         else if (number == 3) {
             players.get(0).setStartCoordinate(new int[] {0,0});
             players.get(1).setStartCoordinate(new int[] {0,3});
             players.get(2).setStartCoordinate(new int[] {0,6});
-            tray[0][0].placeTurtle(initializeTray, players.get(0));
-            tray[0][3].placeTurtle(initializeTray, players.get(1));
-            tray[0][6].placeTurtle(initializeTray, players.get(2));
-            tray[7][0].placeTurtle(initializeTray, jewels.get(0));
-            tray[7][3].placeTurtle(initializeTray, jewels.get(1));
-            tray[7][6].placeTurtle(initializeTray, jewels.get(2));
+            tray[0][0].place(initializeTray, players.get(0));
+            tray[0][3].place(initializeTray, players.get(1));
+            tray[0][6].place(initializeTray, players.get(2));
+            tray[7][0].place(initializeTray, jewels.get(0));
+            tray[7][3].place(initializeTray, jewels.get(1));
+            tray[7][6].place(initializeTray, jewels.get(2));
         }
 
         else if (number == 4) {
@@ -53,12 +53,12 @@ public class Tray {
             players.get(1).setStartCoordinate(new int[] {0,2});
             players.get(2).setStartCoordinate(new int[] {0,5});
             players.get(3).setStartCoordinate(new int[] {0,7});
-            tray[0][0].placeTurtle(initializeTray, players.get(0));
-            tray[0][2].placeTurtle(initializeTray, players.get(1));
-            tray[0][5].placeTurtle(initializeTray, players.get(2));
-            tray[0][7].placeTurtle(initializeTray, players.get(3));
-            tray[7][1].placeTurtle(initializeTray, jewels.get(0));
-            tray[7][6].placeTurtle(initializeTray, jewels.get(1));
+            tray[0][0].place(initializeTray, players.get(0));
+            tray[0][2].place(initializeTray, players.get(1));
+            tray[0][5].place(initializeTray, players.get(2));
+            tray[0][7].place(initializeTray, players.get(3));
+            tray[7][1].place(initializeTray, jewels.get(0));
+            tray[7][6].place(initializeTray, jewels.get(1));
         }
     }
   }
