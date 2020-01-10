@@ -34,7 +34,7 @@ public class Turtle {
     }
 
     public int[] getStartCoordinate() {
-        int[] startCoordinate = {this.xCoordinate, this.yCoordinate}
+        int[] startCoordinate = {this.xCoordinate, this.yCoordinate};
         return startCoordinate;
     }
 
