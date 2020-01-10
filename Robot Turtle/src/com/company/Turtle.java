@@ -24,7 +24,7 @@ public class Turtle {
             }
         }
         else if (this instanceof Jewel) {
-            direction = "Joyaux";
+            direction = "Joyau";
         }
         return this.direction;
     }
