@@ -13,19 +13,19 @@ public class Deck {
     public ArrayList<Card> createDeck() {
 
         for (int i = 0; i < 18; i++) {
-            deck.add(new );
+            deck.add(new Card());
         }
 
         for (int i = 0; i < 1; i++) {
-            deck.add(new );
+            deck.add(new Card());
         }
 
         for (int i = 0; i < 8; i++) {
-            deck.add(new );
+            deck.add(new Card());
         }
 
         for (int i = 0; i < 218; i++) {
-            deck.add(new );
+            deck.add(new Card());
         }
 
     }
