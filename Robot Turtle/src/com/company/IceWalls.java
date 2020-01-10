@@ -19,5 +19,6 @@ public class IceWalls extends Walls {
     public String getType() {
         return this.type="Mur";
     }
+
 }
 
