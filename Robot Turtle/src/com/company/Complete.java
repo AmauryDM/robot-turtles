@@ -7,7 +7,7 @@ public class Complete extends Tour {
     public void completeProgram() {
       Scanner scanner = new Scanner(System.in);
       int input = new int;
-      boolean continue = true;
+      boolean run = true;
 
         System.out.println("Voici votre deck :");
         this.getDeck();
@@ -21,15 +21,15 @@ public class Complete extends Tour {
           }
 
           else if (inputNumber == 0) {
-              continue = false;
+              run = false;
           }
 
           else {
-            Card choosen = playerDeck.get(input - 1);
-            this.program.add(choosen);
-            this.playerDeck.remove(choosen);
+            Card chosen = playerDeck.get(input - 1);
+            this.program.add(chosen);
+            this.playerDeck.remove(chosen);
             this.getDeck();
           }
-        } while(continue);
+        } while(run);
   }
 }
