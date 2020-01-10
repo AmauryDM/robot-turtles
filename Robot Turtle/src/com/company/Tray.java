@@ -61,5 +61,4 @@ public class Tray {
             plateau[7][6].poser(instancePlateau, joyaux.get(1));
         }
     }
-
 }
