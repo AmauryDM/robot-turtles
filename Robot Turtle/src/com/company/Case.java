@@ -38,4 +38,9 @@ public class Case {
             return false;
         }
     }
+
+    public void placeTurtle(Tray tray, Turtle turtle) {
+        turtle.placeTurtle(this.x, this.y);
+        this.contenu = turtle;
+    }
 }
