@@ -1,6 +1,6 @@
 package com.company;
 
-public class IceWalls extends Walls {
+public class IceWall extends Wall {
 
     public String getCharacteristic() {
         return this.characteristic;
@@ -20,4 +20,3 @@ public class IceWalls extends Walls {
         return this.type="Mur";
     }
 }
-
