@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Player extends Turtle{
 
+  public int order;
   private String color;
   public String direction;
   private int position;
