@@ -7,6 +7,8 @@ public class Card {
     public String type;
     protected String description; //Permettre d'être utilisée uniquement dans les sous-classes
 
+    private Scanner scanner = new Scanner(System.in);
+
     public String getType() {
         return this.type;
     }
@@ -16,13 +18,12 @@ public class Card {
     }
 
     public void actionCard(Tray tray, Player player) {
-
-        if (this.type.equals("Carte bleue")) {
+        if (this.type.equals("Bleu")) {
+          player.
         }
 
     }
 
-    public static  Scanner scanner = new Scanner(System.in);
 
     public static void actionCard() {
         System.out.println("Saisir une carte");
