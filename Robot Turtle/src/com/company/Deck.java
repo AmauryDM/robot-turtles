@@ -20,11 +20,11 @@ public class Deck {
         }
 
         for (int i = 0; i < 8; i++) {
-            deck.add(new LaserCard());
+            deck.add(new PurpleCard());
         }
 
         for (int i = 0; i < 218; i++) {
-            deck.add(new Card());
+            deck.add(new LaserCard());
         }
 
         Collections.shuffle(deck);
