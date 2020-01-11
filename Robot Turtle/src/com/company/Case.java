@@ -20,7 +20,7 @@ public class Case {
     this.content = null;
   }
 
-  public Turtle contentEmpty() {
+  public Turtle getContent() {
     if(content == null){
       Turtle turtle = new Turtle();
       turtle.getType(" ");
