@@ -3,17 +3,15 @@ package com.company;
 public class IceWall extends Wall {
 
     public String getCharacteristic() {
-        return this.characteristic;
+        return this.characteristic = "Mur destructible";
     }
-
-    protected boolean isDestroyable;
 
     public boolean getIsDestroyable() {
         return this.isDestroyable;
     }
 
     public String getName() {
-        return this.name="";
+        return this.name="Glace";
     }
 
     public String getType() {
