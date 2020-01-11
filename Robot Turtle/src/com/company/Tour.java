@@ -2,7 +2,7 @@ package com.company;
 
 public class Tour {
 
-  public void end() {
+  public void endTour() {
       Scanner scanner = new Scanner(System.in);
       boolean run = true;
       int input;
