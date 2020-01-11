@@ -19,11 +19,13 @@ public class Card {
 
     public void actionCard(Tray tray, Player player) {
         if (this.type.equals("Bleu")) {
-          player.
+          player.currentCase(tray).empty();
+          Case destination = player.destination(tray);
+          Turtle targetContent = destination.getContent()
+          if(destination == null)
         }
 
     }
-
 
     public static void actionCard() {
         System.out.println("Saisir une carte");
