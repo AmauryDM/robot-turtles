@@ -60,19 +60,19 @@ public class Player extends Turtle{
     Case destination = new Case(0, 0);
 
     if (direction == "N") {
-      caseVisee = tray.positionCase(x+1, y);
+      destination = tray.positionCase(x+1, y);
     }
 
     if (direction == "S") {
-        destination = tray.positionCase(x, y-1);
+      destination = tray.positionCase(x, y-1);
     }
 
     if (direction == "E") {
-        destination = tray.positionCase(x, y+1);
+      destination = tray.positionCase(x, y+1);
     }
 
     if (direction == "W") {
-        destination = tray.positionCase(x-1, y);
+      destination = tray.positionCase(x-1, y);
     }
 
     return destination;
