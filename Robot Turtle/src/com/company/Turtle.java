@@ -42,6 +42,10 @@ public class Turtle {
       this.startCoordinate = startCoordinate;
     }
 
+    public int[] getCoordinate() {
+      int[] coordinate = {this.xCoordinate, this.yCoordinate};
+    }
+
     public void place(int xCoordinate, int yCoordinate){
       this.xCoordinate = xCoordinate;
       this.yCoordinate = yCoordinate;
