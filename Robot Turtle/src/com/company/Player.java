@@ -4,9 +4,8 @@ import java.util.*;
 
 public class Player extends Turtle{
 
-  public int number;
   private String color;
-  private String direction;
+  public String direction;
   private int position;
 
   public ArrayList<Card> playerDeck = new ArrayList<Card>;
@@ -76,5 +75,33 @@ public class Player extends Turtle{
     }
 
     return destination;
+  }
+
+  public ArrayList<Case> frontCase(Tray tray) {
+    ArrayList<Case> caseList = new ArrayList<Case>;
+    if (this.destination(tray) == null) {
+      return null;
+    }
+    if (direction == "N") {
+      for (int i = xCoordinate + 1; i < 8; i++) {
+        caseList.add(tray.positionCase(i, y));
+      }
+    }
+    if (direction == "E") {
+      for (int i = yCoordinate + 1; i < 8; i++) {
+        caseList.add(tray.positionCase(x, i));
+      }
+    }
+    if (direction == "S") {
+      for (int i = xCoordinate - 1; i < 8; i--) {
+        caseList.add(tray.positionCase(i, y));
+      }
+    }
+    if (direction == "W") {
+      for (int i = yCoordinate - 1; i < 8; i--) {
+        caseList.add(tray.positionCase(x, i));
+      }
+    }
+    return caseList;
   }
 }
