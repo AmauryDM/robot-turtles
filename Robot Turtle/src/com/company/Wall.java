@@ -4,6 +4,7 @@ public class Wall {
 
     protected String name;
     protected String characteristic;
+    protected boolean destroyable;
     protected String type;
 
     public String getName() {
