@@ -52,7 +52,7 @@ public class Turtle {
     }
 
     public Case currentCase(Tray tray){
-
+      return tray.positionCase(this.x, this.y);
     }
 
 }
