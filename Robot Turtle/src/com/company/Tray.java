@@ -5,6 +5,7 @@ public class Tray {
 
     private ArrayList<Player> players;
     private ArrayList<Jewel> jewels;
+    public int number;
 
     private Case[][] tray = new Case[8][8];
 
