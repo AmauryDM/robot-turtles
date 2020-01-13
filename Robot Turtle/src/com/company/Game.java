@@ -1,6 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class Game {
 
@@ -54,6 +54,28 @@ public class Game {
       int orderPlayer += 1;
       tour += 1
     } while (nombrePlayers != 1);
+  }
+
+  public void options(Player player) {
+    System.out.println("Quelle action effectuer ?" + "\n" +
+    "1. Compléter le programme" + "\n" +
+    "2. Construire un mur" + "\n" +
+    "3. Executer le programme");
+    Scanner scanner = new Scanner(System.in);
+    int input = scanner.nextInt();
+    if (input == 1) {
+       player.completeProgram();
+    }
+    else if (input == 2) {
+      player.buildWall();
+    }
+    else if (input == 3) {
+      player.executeProgram();
+    }
+    else {
+      
+    }
+
   }
 
 }
