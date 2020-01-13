@@ -3,7 +3,7 @@ package com.company;
 import java.util.*;
 
 
-public class Action extends Tour {
+public class Action extends Player {
 
   public void buildWall(Tray tray) {
     Scanner scanner = new Scanner(System.in);
